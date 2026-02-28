@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 const Hero = () => {
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
             Quero Entender
           </button>
           <button className='bg-[#3262ff9f] text-white px-3 py-4 border-none rounded-lg text-base font-semibold cursor-pointer no-underline flex justify-center gap-2 items-center w-full transition-colors duration-300 hover:bg-[#FF5B32]'>
-            Ver Mapa
+            <Link to={`/mapa`}>Ver Mapa</Link>
           </button>
         </div>
     </main>

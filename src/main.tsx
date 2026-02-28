@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 // pages
 import Home from './route/Home.tsx'
+import Mapa from './route/Mapa.tsx'
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>
+      },
+      {
+        path: "/mapa",
+        element: <Mapa/>
       }
     ]
   }

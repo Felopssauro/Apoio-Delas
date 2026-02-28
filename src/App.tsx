@@ -7,7 +7,7 @@ function App() {
   
 
   return (
-    <div className='min-h-screen bg-[#F4F8F7]'>
+    <div className='min-h-screen bg-[#F4F8F7] relative'>
       <Header/>
       <OutBtn/>
       <Outlet/>

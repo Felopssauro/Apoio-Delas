@@ -246,7 +246,7 @@ const CicloViolencia = () => {
                   </div>
                 </div>
               ) : (
-                <div className="mx-auto relative md:left-15 bg-linar-to-br from-[#056881] to-[#A0DCC0] rounded-3xl p-8 text-white shadow-2xl">
+                <div className="mx-auto relative md:left-15 bg-linear-to-r from-[#056881] to-[#A0DCC0] rounded-3xl p-8 text-white shadow-2xl">
                   <h3 className="text-2xl font-bold mb-6">Entenda o Ciclo</h3>
                   <p className="text-lg leading-relaxed mb-6">
                     O ciclo da violência foi identificado pela psicóloga Lenore Walker em 1979. Ele se repete constantemente e, <strong>com o tempo, os intervalos entre as fases ficam menores</strong>.

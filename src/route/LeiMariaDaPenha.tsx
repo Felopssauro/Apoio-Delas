@@ -50,16 +50,6 @@ const LeiMariaDaPenha = () => {
     }
   ]
 
-  const timeline = [
-    { year: '2006', event: 'Lei Maria da Penha é sancionada em 7 de agosto' },
-    { year: '2011', event: 'STF declara constitucionalidade da lei' },
-    { year: '2012', event: 'STJ torna ação penal pública incondicionada em lesão corporal' },
-    { year: '2018', event: 'Criminalização do descumprimento de medidas protetivas (Lei 13.641)' },
-    { year: '2019', event: 'Polícia pode conceder medidas protetivas em casos urgentes (Lei 13.827)' },
-    { year: '2021', event: 'Criação do crime de violência psicológica (Lei 14.188)' },
-    { year: '2023', event: 'Concessão sumária de medidas protetivas (Lei 14.550)' }
-  ]
-
   return (
     <section className="px-6 py-16 bg-[#F4F8F7]">
       <div className="max-w-6xl mx-auto">

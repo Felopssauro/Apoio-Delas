@@ -10,6 +10,9 @@ import NeedHelp from './route/NeedHelp.tsx'
 import Forum from './route/Forum.tsx'
 import Post from './route/Post.tsx'
 import CicloViolencia from './route/CicloViolencia.tsx'
+import TiposViolencia from './route/TiposViolencia.tsx'  
+import LeiMariaDaPenha from './route/LeiMariaDaPenha.tsx'  
+import SeusDireitos from './route/SeusDireitos.tsx'  
 import LoginUser from './route/LoginUser.tsx'
 import LoginAdmin from './route/LoginAdmin.tsx'
 import LayoutSite from './Layouts/LayoutSite.tsx'
@@ -54,6 +57,18 @@ const router = createBrowserRouter([
       {
         path: "/ciclo-violencia",
         element: <CicloViolencia/>
+      },      
+      {
+        path: "/tipos-violencia",
+        element: <TiposViolencia/>
+      },
+      {
+        path: "/lei-maria-da-penha",
+        element: <LeiMariaDaPenha/>
+      },
+      {
+        path: "/seus-direitos",
+        element: <SeusDireitos/>
       }
     ]
   },

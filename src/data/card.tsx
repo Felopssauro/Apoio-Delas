@@ -72,19 +72,19 @@ export const cardsTypes: Card[] = [
     icon: <BookOpen size={28}/>,
     title: "Tipos de Violencia",
     text: "Entenda as diferentes formas de violência — física, psicológica, sexual, patrimonial e moral — e como identificá-las no dia a dia.",
-    btn: <Link to={`/testes`}>Acessar</Link>,
+    btn: <Link to={`/tipos-violencia`}>Acessar</Link>,
   },
     {
     icon: <Scale size={28}/>,
     title: "Lei",
     text: "Conheça as leis que que protegem você, como a Lei Maria da Penha, e saiba quais são seus direitos garantidos pela legislação brasileira",
-    btn:<Link to={`/testes`}>Acessar</Link>,
+    btn:<Link to={`/lei-maria-da-penha`}>Acessar</Link>,
   },
     {
     icon: <Shield size={28}/>,
     title: "Seus Direitos",
     text: "Você tem direito à proteção, assistência e justiça. Descubra como acessar os serviços públicos e medidas protetivas disponíveis.",
-    btn: <Link to={`/testes`}>Acessar</Link>,
+    btn: <Link to={`/seus-direitos`}>Acessar</Link>,
   }
 ]
 

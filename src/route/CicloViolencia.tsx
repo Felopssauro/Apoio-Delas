@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AlertCircle, Heart, Share2, ArrowRight } from 'lucide-react'
+import { AlertCircle, Heart, Share2, ArrowRight, Gift, Siren, TriangleAlert } from 'lucide-react'
 
 const CicloViolencia = () => {
   const [selectedPhase, setSelectedPhase] = useState<number | null>(null)
@@ -11,7 +11,7 @@ const CicloViolencia = () => {
       subtitle: 'Aumento da Tensão',
       color: 'from-[#4A148C] to-[#7B1FA2]',
       bgColor: 'bg-gradient-to-br from-[#4A148C] to-[#7B1FA2]',
-      icon: '⚠️',
+      icon: <TriangleAlert />,
       description: 'Nesse primeiro momento, o agressor mostra-se tenso e irritado por coisas insignificantes, chegando a ter acessos de raiva.',
       details: [
         'O agressor humilha a vítima e faz ameaças',
@@ -30,7 +30,7 @@ const CicloViolencia = () => {
       subtitle: 'Ato de Violência',
       color: 'from-[#C62828] to-[#E53935]',
       bgColor: 'bg-gradient-to-br from-[#C62828] to-[#E53935]',
-      icon: '🚨',
+      icon: <Siren/>,
       description: 'A tensão acumulada explode e se materializa em violência física, psicológica, sexual, moral ou patrimonial.',
       details: [
         'O agressor perde completamente o controle',
@@ -49,7 +49,7 @@ const CicloViolencia = () => {
       subtitle: 'Arrependimento (Lua de Mel)',
       color: 'from-[#6A1B9A] to-[#AB47BC]',
       bgColor: 'bg-gradient-to-br from-[#6A1B9A] to-[#AB47BC]',
-      icon: '💐',
+      icon: <Gift/>,
       description: 'O agressor se mostra arrependido, torna-se amável e promete mudanças para conseguir a reconciliação.',
       details: [
         'O agressor pede perdão e promete que "nunca mais vai acontecer"',
@@ -189,24 +189,24 @@ const CicloViolencia = () => {
 
               {/* Labels das fases */}
               <div className="absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-16">
-                <div className="text-center cursor-pointer" onClick={() => setSelectedPhase(1)}>
-                  <span className="text-2xl mb-1 block">⚠️</span>
+                <div className="text-center cursor-pointer flex flex-col items-center" onClick={() => setSelectedPhase(1)}>
+                  <span className="text-2xl mb-2 flex items-center justify-center"><TriangleAlert /></span>
                   <p className="font-bold text-[#4A148C] text-sm">FASE 1</p>
                   <p className="text-xs text-gray-600">Aumento da Tensão</p>
                 </div>
               </div>
 
               <div className="absolute bottom-4 right-0 translate-x-16">
-                <div className="text-center cursor-pointer" onClick={() => setSelectedPhase(2)}>
-                  <span className="text-2xl mb-1 block">🚨</span>
+                <div className="text-center cursor-pointer flex flex-col items-center" onClick={() => setSelectedPhase(2)}>
+                  <span className="text-2xl mb-2 flex items-center justify-center"><Siren /></span>
                   <p className="font-bold text-[#C62828] text-sm">FASE 2</p>
                   <p className="text-xs text-gray-600">Ato de Violência</p>
                 </div>
               </div>
 
               <div className="absolute bottom-4 left-0 -translate-x-16">
-                <div className="text-center cursor-pointer" onClick={() => setSelectedPhase(3)}>
-                  <span className="text-2xl mb-1 block">💐</span>
+                <div className="text-center cursor-pointer flex flex-col items-center" onClick={() => setSelectedPhase(3)}>
+                  <span className="text-2xl mb-2 flex items-center justify-center"><Gift /></span>
                   <p className="font-bold text-[#6A1B9A] text-sm">FASE 3</p>
                   <p className="text-xs text-gray-600">Arrependimento</p>
                 </div>

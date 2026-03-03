@@ -9,6 +9,7 @@ import Mapa from './route/Mapa.tsx'
 import NeedHelp from './route/NeedHelp.tsx'
 import Forum from './route/Forum.tsx'
 import Post from './route/Post.tsx'
+import CicloViolencia from './route/CicloViolencia.tsx'
 import LoginUser from './route/LoginUser.tsx'
 import LoginAdmin from './route/LoginAdmin.tsx'
 import LayoutSite from './Layouts/LayoutSite.tsx'
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path:"/vozes-noticias/:id",
         element: <Post/>
+      },
+      {
+        path: "/ciclo-violencia",
+        element: <CicloViolencia/>
       }
     ]
   },

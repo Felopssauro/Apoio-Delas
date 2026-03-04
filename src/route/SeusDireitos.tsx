@@ -123,7 +123,7 @@ const SeusDireitos = () => {
         </div>
 
         {/* Alerta importante */}
-        <div className="bg-gradient-to-r from-[#FF5F37] to-[#FF7552] rounded-3xl p-8 text-white shadow-xl mb-12">
+        <div className="bg-linear-to-r from-[#FF5F37] to-[#FF7552] rounded-3xl p-8 text-white shadow-xl mb-12">
           <div className="flex items-start gap-4">
             <AlertCircle size={32} className="shrink-0 mt-1" />
             <div>
@@ -151,7 +151,7 @@ const SeusDireitos = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {medidasProtetivas.map((medida, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-[#056881] to-[#5fa8a8] rounded-2xl p-6 text-white hover:scale-105 transition-all">
+              <div key={idx} className="bg-linear-to-br from-[#056881] to-[#5fa8a8] rounded-2xl p-6 text-white hover:scale-105 transition-all">
                 <div className="bg-white/20 backdrop-blur-sm rounded-xl w-14 h-14 flex items-center justify-center mb-4">
                   {medida.icon}
                 </div>
@@ -201,7 +201,7 @@ const SeusDireitos = () => {
         </div>
 
         {/* Como solicitar */}
-        <div className="bg-gradient-to-br from-[#6A1B9A] to-[#8E24AA] rounded-3xl p-8 md:p-12 text-white shadow-xl mb-12">
+        <div className="bg-linear-to-br from-[#6A1B9A] to-[#8E24AA] rounded-3xl p-8 md:p-12 text-white shadow-xl mb-12">
           <h2 className="text-3xl font-bold mb-8 text-center">
             Como Solicitar Medidas Protetivas?
           </h2>
@@ -271,7 +271,7 @@ const SeusDireitos = () => {
         </div>
 
         {/* Duração das medidas */}
-        <div className="bg-gradient-to-r from-[#056881] to-[#5fa8a8] rounded-3xl p-8 md:p-12 text-white shadow-xl mb-12">
+        <div className="bg-linear-to-r from-[#056881] to-[#5fa8a8] rounded-3xl p-8 md:p-12 text-white shadow-xl mb-12">
           <h2 className="text-3xl font-bold mb-6">
             Por Quanto Tempo Valem as Medidas Protetivas?
           </h2>
@@ -342,7 +342,7 @@ const SeusDireitos = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-[#FF5F37] to-[#FF7552] rounded-3xl p-8 md:p-12 text-white shadow-xl text-center">
+        <div className="bg-linear-to-r from-[#FF5F37] to-[#FF7552] rounded-3xl p-8 md:p-12 text-white shadow-xl text-center">
           <h2 className="text-3xl font-bold mb-6">
             Seus Direitos Estão Garantidos por Lei
           </h2>

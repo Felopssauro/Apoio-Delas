@@ -85,7 +85,7 @@ const LeiMariaDaPenha = () => {
         ))}
 
         {/* Principais inovações */}
-        <div className="bg-gradient-to-br from-[#056881] to-[#5fa8a8] rounded-3xl p-8 md:p-12 text-white shadow-xl mb-12">
+        <div className="bg-linear-to-br from-[#056881] to-[#5fa8a8] rounded-3xl p-8 md:p-12 text-white shadow-xl mb-12">
           <h2 className="text-3xl font-bold mb-8 text-center">Principais Inovações da Lei</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {innovations.map((item, idx) => (
@@ -165,7 +165,7 @@ const LeiMariaDaPenha = () => {
         </div>
 
         {/* Abrangência */}
-        <div className="bg-gradient-to-br from-[#6A1B9A] to-[#8E24AA] rounded-3xl p-8 md:p-12 text-white shadow-xl mb-12">
+        <div className="bg-linear-to-br from-[#056881] to-[#5fa8a8] rounded-3xl p-8 md:p-12 text-white shadow-xl mb-12">
           <h2 className="text-3xl font-bold mb-6">A Quem a Lei se Aplica?</h2>
           <div className="space-y-6 text-lg">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
@@ -217,7 +217,7 @@ const LeiMariaDaPenha = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-[#056881] to-[#5fa8a8] rounded-3xl p-8 md:p-12 text-white shadow-xl text-center">
+        <div className="bg-linear-to-r from-[#056881] to-[#5fa8a8] rounded-3xl p-8 md:p-12 text-white shadow-xl text-center">
           <h2 className="text-3xl font-bold mb-6">
             A Lei Está do Seu Lado
           </h2>

@@ -1,4 +1,4 @@
-import {Users, ClipboardList, Megaphone, BookOpen, Scale, Shield, ShieldCheck, HeartHandshake, Heart, Lightbulb, Target} from "lucide-react"
+import {Users, ClipboardList, Megaphone, BookOpen, Scale, Shield, ShieldCheck, HeartHandshake, Heart, Lightbulb, Target, MapPin, FileText, Phone} from "lucide-react"
 import { Link } from "react-router-dom"
 
  type Card = {
@@ -44,6 +44,16 @@ type LinkItem =
   comments: {author: string; text: string; date: string}[]
  }
 
+ export type Step = {
+  id: number, 
+  fase: string,
+  title: string,
+  description: string,
+  details: string[],
+  icon: React.ReactNode,
+  color: string
+  bg: string
+ }
 export const cardsData: Card[] = [
     {
     icon: <Users size={48} className="text-white" />,
@@ -63,7 +73,7 @@ export const cardsData: Card[] = [
     icon: <Megaphone size={48} className="text-white" />,
     title: 'Como Denunciar',
     text: 'Conheça e entenda o passo a passo de como prosseguir com uma denúncia',
-    btn: <Link to={`/testes`}>Acessar</Link>,
+    btn: <Link to={`/tutorial-denuncia`}>Acessar</Link>,
   },
 ] 
 
@@ -94,7 +104,7 @@ export const cardsLink: CardLink[] = [
     title: "Quero Denunciar",
     text: "Você será redirecionada para a delegacia digital. Caso tenha dúvidas sobre como denunciar.",
     links: [
-      {label: 'Acessar Delegacia Digital', href: 'https://www.delegaciadigital.sp.gov.br', external: true},
+      {label: 'Acessar Delegacia Digital', href: 'https://delegaciavirtual.sinesp.gov.br/portal/home', external: true},
       {label: 'Ver nosso tutorial', to: '/tutorial-denuncia', external: false }
     ]
   },
@@ -227,4 +237,67 @@ export const pilares = [
     title: 'Quem Somos',
     text: 'Somos estudantes comprometidas em usar a tecnologia como ferramenta de transformação social, colocando as mulheres no centro de tudo.',
   }
+]
+
+export const steps : Step[] = [
+   {
+    id: 1,
+    fase: 'Passo 1',
+    title: 'Coloque-se em Segurança',
+    description: 'Antes de qualquer coisa, sua segurança é a prioridade. Se estiver em perigo imediato, ligue para o 190 (Polícia) ou 180 (Central da Mulher).',
+    details: [
+      'Ligue 190 em caso de perigo imediato',
+      'Ligue 180 para orientação e apoio',
+      'Vá para um lugar seguro — casa de familiar ou amiga de confiança',
+      'Se possível, leve documentos pessoais e pertences essenciais',
+    ],
+    icon: <ShieldCheck size={32} />,
+    color: 'text-[#056881]',
+    bg: 'bg-[#056881]',
+  },
+  {
+    id: 2,
+    fase: 'Passo 2',
+    title: 'Registre o Boletim de Ocorrência',
+    description: 'Você pode registrar o B.O. presencialmente em uma Delegacia da Mulher (DEAM) ou online pela Delegacia Digital.',
+    details: [
+      'Acesse delegaciadigital.sp.gov.br ou vá a uma DEAM',
+      'Relate os fatos com o máximo de detalhes possível',
+      'Guarde o número do protocolo gerado',
+      'Você não precisa de advogado para registrar o B.O.',
+    ],
+    icon: <FileText size={32} />,
+    color: 'text-[#7b0692]',
+    bg: 'bg-[#7b0692]',
+  },
+  {
+    id: 3,
+    fase: 'Passo 3',
+    title: 'Solicite Medida Protetiva',
+    description: 'Após o B.O., você pode solicitar uma medida protetiva de urgência para se afastar do agressor legalmente.',
+    details: [
+      'Peça na própria delegacia após o B.O.',
+      'O juiz tem até 48h para analisar o pedido',
+      'A medida pode proibir o agressor de se aproximar de você',
+      'Guarde cópia da medida protetiva sempre com você',
+    ],
+    icon: <MapPin size={32} />,
+    color: 'text-[#FF5F37]',
+    bg: 'bg-[#FF5F37]',
+  },
+  {
+    id: 4,
+    fase: 'Passo 4',
+    title: 'Busque Apoio e Acompanhamento',
+    description: 'A denúncia é só o começo. Buscar apoio psicológico e jurídico é fundamental para sua recuperação e proteção.',
+    details: [
+      'CRAS e CREAS oferecem assistência social gratuita',
+      'OAB tem núcleos de apoio jurídico gratuito',
+      'Casa da Mulher Brasileira oferece atendimento integral',
+      'Grupos de apoio ajudam na recuperação emocional',
+    ],
+    icon: <Phone size={32} />,
+    color: 'text-[#056881]',
+    bg: 'bg-[#056881]',
+  },
 ]

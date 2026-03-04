@@ -120,7 +120,7 @@ const LoginUser = () => {
                 placeholder='Como gostaria de ser chamada?'
                 value={form.name}
                 onChange={handleChange}
-                className="bg-[#3ab8cc] text-white placeholder-white/60 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                className="bg-[#3ab8cc] text-[#0b0a66] placeholder-[#0b0a66]/70 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
               />
               <span className='text-xs text-white/60 px-1'>
                 Sua identidade real será preservada. Use qualquer nome à sua escolha.

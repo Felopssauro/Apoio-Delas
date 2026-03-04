@@ -22,6 +22,7 @@ import LayoutAdmin from './Layouts/LayoutAdmin.tsx'
 import UserDashboard from './route/UserDashboard.tsx'
 import Us from './route/Us.tsx'
 import AdminDashboard from './route/AdminDashboard.tsx'
+import TutorialDenuncia from './route/TutorialDenuncia.tsx'
 
 const router = createBrowserRouter([
   // site publico
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "/seus-direitos",
         element: <SeusDireitos/>
+      },
+      {
+        path: "/tutorial-denuncia",
+        element: <TutorialDenuncia/>
       }
     ]
   },

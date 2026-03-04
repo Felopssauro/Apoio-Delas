@@ -1,7 +1,7 @@
 import Hero from '../components/Hero'
 import Principal from '../components/Principal'
 import Relatos from '../components/Relatos'
-import Forum from './Forum'
+import CicloViolencia from './CicloViolencia'
 
 
 const Home = () => {
@@ -10,6 +10,7 @@ const Home = () => {
         <Hero/>
         <Relatos/>
         <Principal/>
+        <CicloViolencia/>
     </>
   )
 }

@@ -1,6 +1,7 @@
-
+import { Link } from "react-router-dom"
 
 const Footer = () => {
+    
   return (
     <footer className='bg-linear-to-r from-[#056881] to-[#a0dcc0] mt-auto text-[#16139c]'>
         <div className='max-w-7xl mx-auto px-6 py-8'>
@@ -13,7 +14,10 @@ const Footer = () => {
 
         <div className='pt-6 text-center md:text-left'>
             <p className='text-sm text-[#0c0933] font-bold'>
-                &copy; {new Date().getFullYear()} <strong className="text-[#130b79] uppercase text-xl font-bungee">Nebula</strong>.
+                &copy; {new Date().getFullYear()}
+                <Link to={`/q-somos`}>
+                     <strong className="text-[#130b79] uppercase text-xl font-bungee"> Nebula</strong>.
+                </Link>
                 Todos os direitos reservados.
             </p>
             </div>

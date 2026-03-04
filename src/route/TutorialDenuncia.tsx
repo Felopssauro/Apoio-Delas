@@ -45,8 +45,8 @@ const TutorialDenuncia = () => {
 
             <div className='px-8 py-8 flex flex-col md:flex-row gap-8'>
                 {/* Descrição */}
-                <div className='flex-1 flex-col gap-3'>
-                    <p className='text-gray-600 leading-relaxed'>{current.description}</p>
+                <div className=' text-2xl flex-1 flex-col gap-3'>
+                    <p className=' text-gray-600 leading-relaxed'>{current.description}</p>
                     <div className='flex flex-col gap-3'>
                         {current.details.map((detail, i) => (
                             <div key={i} className="flex items-start gap-3">
@@ -60,12 +60,12 @@ const TutorialDenuncia = () => {
                 </div>
 
                 {/* Card lateral */}
-                <div className='md:w-64 shrink-0 bg-[#F4F8F7] rounded-2xl p-6 flex flex-col gap-3 h-fit'>
-                    <span className='text-xs font-bold text-gray-400 uppercase tracking-widest'>Lembre-se</span>
-                    <p className='text-sm text-gray-600 leading-relaxed'>
+                <div className='md:w-64 shrink-0 bg-[#2ecce075] rounded-2xl p-6 flex flex-col gap-3 h-fit'>
+                    <span className='text-xs font-bold text-gray-600 uppercase tracking-widest'>Lembre-se</span>
+                    <p className='text-sm text-gray-700 leading-relaxed'>
                         Você tem o <strong>direito de denunciar</strong> de forma gratuita e sem advogado. Nenhuma forma de violência é pequena demais para ser relatada.
                     </p>
-                    <div className='pt-3 border-t border-gray-200 text-xs text-gray-400'>
+                    <div className='pt-3 border-t border-gray-500 text-xs text-gray-700'>
                         Ligue <strong className="text-[#056881]">180</strong> — Central da Mulher
                     </div>
                 </div>
@@ -73,7 +73,7 @@ const TutorialDenuncia = () => {
 
             {/* Navegação */}
             <div className='px-8 pb-8 flex items-center justify-between'>
-                <button onClick={() => setActive((p) => Math.max(0, p - 1))} disabled={active === 0} className='flex items-center gap-2 px-5 py-2 rounded-xl border border-gray-200 text-sm font-semibold text-gray-500 hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-all'>
+                <button onClick={() => setActive((p) => Math.max(0, p - 1))} disabled={active === 0} className='flex items-center gap-2 px-5 py-2 rounded-xl bg-[#f1eeee] border border-gray-200 text-sm font-semibold text-gray-500 hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-all'>
                     <ChevronLeft size={16}/> Anterior
                 </button>
 

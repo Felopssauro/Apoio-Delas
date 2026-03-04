@@ -63,7 +63,7 @@ const Relatos = () => {
           <div>
             <span className="text-xs font-semibold tracking-widest uppercase">Comunidade</span>
             <Link to={`/vozes-noticias`}>
-              <h2 className="text-3xl font-bold text-[#09083d] mt-1">Vozes e Notícias</h2>
+              <h2 className="text-3xl font-bold text-[#09083d] mt-1 hover:text-[#45a3da]">Vozes e Notícias</h2>
             </Link>
             <p className="text-gray-500 text-sm mt-1">Relatos e experiências compartilhadas pela comunidade</p>
           </div>

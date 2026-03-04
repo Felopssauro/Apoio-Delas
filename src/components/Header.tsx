@@ -12,7 +12,7 @@ const Header = () => {
   
   return (
     <header className="bg-linear-to-r from-[#056881] to-[#a0dcc0]">
-      <div className="flex justify-between items-center px-4 md:px-16 py-6 text-[#050d74]">
+      <div className="flex justify-between items-center px-4 md:px-16 py-4 text-[#050d74]">
         <div className="flex items-center gap-3">
           <NavLink to={`/`}>
             <h2 className="font-bungee">Apoio Delas</h2>
@@ -24,14 +24,14 @@ const Header = () => {
           <nav className="flex gap-10 text-sm font-medium font-bungee">
             <NavLink to={`/preciso-ajuda`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Preciso de Ajuda</NavLink>
             <NavLink to={`/vozes-noticias`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Vozes e Noticias</NavLink>
-            <NavLink to={`/ciclo-violencia`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Ciclo de Violencia</NavLink>
+            <NavLink to={`/tutorial-denuncia`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Como Denunciar</NavLink>
           </nav>
             <NavLink to={`/doacoes`}>
-            <button className="bg-gradient-to-r from-[#FF5F37] to-[#FF7552] text-white px-6 py-2 rounded-lg font-semibold       hover:shadow-lg transition-all duration-200 flex items-center gap-2">
+            <button className="bg-linear-to-r from-[#FF5F37] to-[#FF7552] text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center gap-2">
             Doar
             </button>
             </NavLink>
-          <button onClick={() => handleNavigate(`/login-user`)} className="bg-[#f7a670] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#f1740e] transition-all duration-200 shadow-sm hover:shadow-md">
+          <button onClick={() => handleNavigate(`/login-user`)} className="bg-linear-to-r from-[#FF5F37] to-[#FF7552] text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center gap-2">
             Entrar
           </button>
         </div>
@@ -48,10 +48,10 @@ const Header = () => {
           <nav className="flex flex-col gap-4 text-sm font-medium">
             <NavLink to={`/preciso-ajuda`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Preciso de Ajuda</NavLink>
             <NavLink to={`/vozes-noticias`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Vozes e Noticias</NavLink>
-            <NavLink to={`/ciclo-violencia`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Ciclo de Violencia</NavLink>
+            <NavLink to={`/tutorial-denuncia`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Como Denunciar</NavLink>
           </nav>
             <NavLink to={`/doacoes`}>
-            <button className="w-full bg-gradient-to-r from-[#FF5F37] to-[#FF7552] text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-200">
+            <button className="w-full bg-linear-to-r from-[#FF5F37] to-[#FF7552] text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-200">
             Doar
             </button>
             </NavLink>

@@ -3,7 +3,6 @@ import Principal from '../components/Principal'
 import Relatos from '../components/Relatos'
 import CicloViolencia from './CicloViolencia'
 
-
 const Home = () => {
   return (
     <>

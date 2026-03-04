@@ -10,18 +10,18 @@ const quickLinks = [
 
 const Hero = () => {
   const navigate = useNavigate()
- const [displayText, setDisplayText] = useState('')
+  const [displayText, setDisplayText] = useState('')
   const [displayHighLight, setDisplayHighLight] = useState('')
-  const [isTyping, setIstyping] = useState(true)
+  const [isTyping, setIsTyping] = useState(true)
 
   const fullText = 'Apoio '
   const highLightText = 'DELAS'
-  const typeingSpeed = 200 // milissegundos
+  const typingSpeed = 200
 
   useEffect(() => {
     let currentIndex = 0
     let highlightIndex = 0
-    let stage = 'typing-full' // 'typing-full' ou 'typing-highlight'
+    let stage = 'typing-full'
     let timeOutId: ReturnType<typeof setTimeout>
 
     const animate = () => {
@@ -29,34 +29,30 @@ const Hero = () => {
         if (currentIndex < fullText.length) {
           setDisplayText(fullText.substring(0, currentIndex + 1))
           currentIndex++
-          timeOutId = setTimeout(animate, typeingSpeed)
+          timeOutId = setTimeout(animate, typingSpeed)
         } else {
-          // Terminou o texto principal, começa o highlight
           stage = 'typing-highlight'
           highlightIndex = 0
-          timeOutId = setTimeout(animate, typeingSpeed)
+          timeOutId = setTimeout(animate, typingSpeed)
         }
       } else if (stage === 'typing-highlight') {
         if (highlightIndex < highLightText.length) {
           setDisplayHighLight(highLightText.substring(0, highlightIndex + 1))
           highlightIndex++
-          timeOutId = setTimeout(animate, typeingSpeed)
+          timeOutId = setTimeout(animate, typingSpeed)
         } else {
-          // Tudo pronto
-          setIstyping(false)
+          setIsTyping(false)
         }
       }
     }
 
     animate()
-    
     return () => clearTimeout(timeOutId)
   }, [])
-
-
   const handleNavigate = (path: string) => {
     navigate(path)
   }
+  
   return (
     <main
       className="min-h-screen w-full flex items-center justify-center bg-cover bg-center relative"
@@ -90,14 +86,14 @@ const Hero = () => {
         {/* Botões principais */}
         <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
           <button
-            onClick={() => navigate('/preciso-ajuda')}
+            onClick={() => handleNavigate('/preciso-ajuda')}
             className="flex items-center justify-center gap-2 bg-[#FF5F37] hover:bg-[#e04820] text-white px-6 py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto"
           >
             <AlertCircle size={18} />
             Preciso Denunciar - Ajuda Urgente
           </button>
           <button
-            onClick={() => navigate('/testes')}
+            onClick={() => handleNavigate('/testes')}
             className="flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 border border-white/30 text-white px-6 py-3.5 rounded-2xl font-semibold text-sm transition-all duration-200 backdrop-blur-sm hover:-translate-y-0.5 w-full sm:w-auto"
           >
             <Shield size={18} />

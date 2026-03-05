@@ -294,7 +294,7 @@ export const grupos: GroupCard[] = [
     title: 'Grupos de Apoio Presenciais',
     text: 'Encontre grupos de apoio presenciais na sua cidade para compartilhar experiências e fortalecer sua rede de suporte.',
     links: [
-      { label: 'Acessar link', href: '#', external: true },
+      { label: 'Acessar link', to: '/mapa', external: false },
     ],
   },
   {
@@ -313,7 +313,7 @@ export const grupos: GroupCard[] = [
     title: 'Comunidades Online',
     text: 'Acesse comunidades online onde mulheres compartilham suas histórias e se apoiam mutuamente.',
     links: [
-      { label: 'Acessar comunidade', href: '#', external: true },
+      { label: 'Acessar comunidade', href: 'https://metoobrasil.org.br/', external: true },
     ],
   },
   {
@@ -321,7 +321,7 @@ export const grupos: GroupCard[] = [
     title: 'Redes de Apoio Institucional',
     text: 'Conheça organizações e instituições que oferecem suporte especializado para mulheres em situação de vulnerabilidade.',
     links: [
-      { label: 'Acessar link', href: '#', external: true },
+      { label: 'Acessar link', href: 'https://www.gov.br/mulheres/pt-br/acesso-a-informacao/acoes-e-programas/casa-da-mulher-brasileira', external: true },
     ],
   },
 ]

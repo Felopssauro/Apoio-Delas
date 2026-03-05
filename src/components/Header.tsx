@@ -1,11 +1,13 @@
 import { useState } from "react"
-import {X, Menu} from 'lucide-react'
+import {X, Menu, User} from 'lucide-react'
 import { NavLink, useNavigate } from "react-router-dom"
+import { useAuth } from "../context/AuthContext"
 
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navigate = useNavigate()
+  const { isAuthenticated } = useAuth()
   const handleNavigate = (path: string) => {
     navigate(path)
   } 
@@ -31,9 +33,15 @@ const Header = () => {
             Doar
             </button>
             </NavLink>
-          <button onClick={() => handleNavigate(`/login-user`)} className="bg-linear-to-r from-[#FF5F37] to-[#FF7552] text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center gap-2">
-            Entrar
-          </button>
+          {isAuthenticated ? (
+            <button onClick={() => handleNavigate(`/user-dashboard`)} className="bg-linear-to-r from-[#FF5F37] to-[#FF7552] text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center gap-2">
+              <User size={18}/> Meus Relatos
+            </button>
+          ) : (
+            <button onClick={() => handleNavigate(`/login-user`)} className="bg-linear-to-r from-[#FF5F37] to-[#FF7552] text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center gap-2">
+              Entrar
+            </button>
+          )}
         </div>
 
         {/* Inicio mobile */}
@@ -55,9 +63,15 @@ const Header = () => {
             Doar
             </button>
             </NavLink>
-          <button className="bg-[#f7a670] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#f1740e] transition-all duration-200 shadow-sm hover:shadow-md">
-            Entrar
-          </button>
+          {isAuthenticated ? (
+            <button onClick={() => handleNavigate(`/user-dashboard`)} className="w-full bg-[#f7a670] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#f1740e] transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center gap-2">
+              <User size={18}/> Meus Relatos
+            </button>
+          ) : (
+            <button onClick={() => handleNavigate(`/login-user`)} className="w-full bg-[#f7a670] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#f1740e] transition-all duration-200 shadow-sm hover:shadow-md">
+              Entrar
+            </button>
+          )}
         </div>
       )}
     </header>

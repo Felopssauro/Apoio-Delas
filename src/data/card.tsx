@@ -300,7 +300,7 @@ export const grupos: GroupCard[] = [
   {
     icon: <MessageCircle size={40} className="text-[#09083D]" />,
     title: 'Grupos nas Redes Sociais',
-    text: 'Participe de grupos nas redes sociais moderados por profissionais para troca de apoio e informações de forma segura.',
+    text: 'Participe de grupos nas redes sociais moderados pela comunidade para troca de apoio e informações de forma segura.',
     links: [
       { label: 'Facebook', href: 'https://www.facebook.com/diganaoaviolenciacontraamulher/', icon: <FaFacebook />, external: true },
       { label: 'Discord', href: 'https://discord.com/invite/closett', icon: <FaDiscord />, external: true },
